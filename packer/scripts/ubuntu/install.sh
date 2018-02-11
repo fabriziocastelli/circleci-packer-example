@@ -11,7 +11,7 @@ apt-get update && apt-get install -y \
   #
 
 curl -fsSL get.docker.com -o get-docker.sh
-sh get-docke.sh -eux
+sh get-docker.sh -eux
 
 docker version
 
