@@ -41,13 +41,5 @@ cat <<'EOP' > /tmp/install.patch
        end
      else
 EOP
+echo "END"
 
-curl -L http://aws-codedeploy-ap-northeast-1.s3.amazonaws.com/latest/install \
-  | sed -e 's/gdebi/gdebi-core/g' > /tmp/install
-
-pushd /tmp
-  patch -p0 < install.patch
-popd
-
-chmod +x /tmp/install
-/tmp/install auto
