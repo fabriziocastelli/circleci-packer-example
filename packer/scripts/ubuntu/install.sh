@@ -6,7 +6,7 @@ apt-get update && apt-get install -y \
   curl \
   git \
   python-pip \
-  ruby2.0 \
+  ruby \
   wget \
   #
 
